@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="luijdelmar.fueljuice.fragments.CentralFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mfuel_liters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Fuel in liters"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_fuel_liters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mfuel_liters"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tv_mkilo_meters_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_fuel_liters"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="Way in kilometers"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mkilo_meters_way"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tv_mfuel_price_per_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_distance"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="Fuel price per liter"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_fuel_price_per_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mfuel_price_per_liter"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tv_mcost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_fuel_price_per_liter"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="Cost"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mcost"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scroll_view"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+    </LinearLayout>
+
+</RelativeLayout>

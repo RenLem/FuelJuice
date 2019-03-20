@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_list_title_fuel_liters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Liters of fuel (l)"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_list_fuel_liters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_list_title_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_list_fuel_liters"
+        android:layout_marginTop="8dp"
+        android:text="Distance in kilometers (km)"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_list_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_list_fuel_liters"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_list_title_fuel_price_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price of fuel per liter (Kn/l)"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_list_fuel_price_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_list_titile_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cost (Kn)"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_list_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="24dp" />
+
+</LinearLayout>
